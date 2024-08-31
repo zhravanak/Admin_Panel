@@ -1,0 +1,239 @@
+.users {
+	width: 100%;
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: 2rem;
+}
+.users .users__title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: start;
+	margin-top: 2rem;
+}
+
+.users__button--addUser {
+	width: 15rem;
+	font-size: 1.5rem;
+	padding: 0.5rem 0;
+	margin-left: 1rem;
+}
+.users__button--addUser > svg {
+	margin-right: 1rem;
+}
+
+.table {
+	width: 95%;
+	max-width: 1500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	margin: 2rem auto;
+	background-color: #fff;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px rgba(12, 9, 9, 0.1);
+	padding: 2rem;
+}
+.table__empty {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+.table__empty--img img {
+	width: 100%;
+	height: 20rem;
+}
+.table__empty--text {
+	font-size: 2rem;
+	font-weight: 700;
+}
+.table__container {
+	width: 95%;
+	margin-top: 2rem;
+}
+.table__header {
+	width: 100%;
+	padding: 1rem 0;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.table__header--title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	width: 25%;
+	text-align: right;
+}
+.table__header tr {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.table__body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 2rem;
+}
+.table__body tr {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.table__data {
+	font-size: 1.2rem;
+	width: 25%;
+}
+.table__data--img {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+}
+.table__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.table__button > button {
+	padding: 0.7rem 2rem;
+}
+
+.users__data {
+	width: 100%;
+}
+.users__data--firsname {
+	width: 20%;
+}
+.users__data--age {
+	width: 10%;
+}
+.users__data--username {
+	width: 20%;
+}
+.users__data--phone {
+	width: 20%;
+	direction: ltr;
+	text-align: end;
+}
+.users__data--email {
+	width: 20%;
+}
+.users__form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	width: 90%;
+	height: 75%;
+	gap: 2rem;
+	margin-top: 5rem;
+	padding: 2rem;
+}
+.users__group {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 45%;
+	max-width: 300px;
+	flex-grow: 1;
+	margin: 0.6rem 0;
+}
+.users__label {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	transform: translateY(-50%);
+	background-color: #d3d8e5;
+	font-size: 1.2rem;
+	color: #471aaa;
+	padding: 0 0.5rem;
+	border-radius: 0.2rem;
+}
+.users__input {
+	width: 300px;
+	height: 50px;
+	background: #d3d8e5;
+	border: none;
+	border-radius: 13px;
+	outline: none;
+	font-family: 'lalezar';
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding-right: 2rem;
+}
+
+.users__input[name='phone'] {
+	direction: ltr;
+	text-align: end;
+}
+
+.users__input::-webkit-outer-spin-button,
+.users__input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.users__input::placeholder {
+	color: #777;
+	padding-left: 1rem;
+}
+.users__button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	gap: 3rem;
+}
+.users__button--submit,
+.users__button--cancel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20.5rem;
+	height: 4.5rem;
+	border-radius: 13px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	/* Chrome, Safari, Edge, Opera */
+}
+.users__button--submit > svg,
+.users__button--cancel > svg {
+	margin-right: 1rem;
+}
+.users__button--submit {
+	background-color: #471aaa;
+	color: #fff;
+}
+.users__button--submit:hover {
+	background-color: #612ecf;
+}
+.users__button--cancel {
+	background-color: #d3d8e5;
+	color: #777;
+}
+.users__button--cancel:hover {
+	background-color: rgba(211, 216, 229, 0.7);
+}
+
+.error-text {
+	position: absolute;
+	top: 100%;
+	color: red;
+}

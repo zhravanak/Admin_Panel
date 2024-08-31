@@ -1,0 +1,41 @@
+@import '@fontsource/lalezar';
+
+/*  Path: src/styleSheet/_font.scss */
+
+@font-face {
+	font-family: 'Morabba';
+	src: url('/../assets/fonts/moraba/Morabba-Medium.eot');
+	src: url('/../assets/fonts/moraba/Morabba-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/src/assets/fonts/moraba/Morabba-Medium.woff2') format('woff2'),
+		url('/src/assets/fonts/moraba/Morabba-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Morabba-Bold';
+	src: url('/../assets/fonts/moraba/Morabba-Bold.eot');
+	src: url('/../assets/fonts/moraba/Morabba-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/src/assets/fonts/moraba/Morabba-Bold.woff2') format('woff2'),
+		url('/src/assets/fonts/moraba/Morabba-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--font-family: 'Morabba', cursive;
+	--font-size: 62.5%;
+	--font-weight: 400;
+	--line-height: 1.5;
+	--letter-spacing: 0;
+}
+
+html {
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
+	line-height: var(--line-height);
+	letter-spacing: var(--letter-spacing);
+}

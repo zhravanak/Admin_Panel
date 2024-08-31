@@ -1,0 +1,208 @@
+.header {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 95px;
+	margin: 0 1.7rem;
+}
+.header__info {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #471aaa;
+	transition: all 0.3s ease-in-out;
+	margin-left: auto;
+	user-select: none;
+}
+.header__info:hover {
+	color: #612ecf;
+}
+.header__info--profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+.header__info--profile--img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.header__info--name {
+	margin-right: 1rem;
+}
+.header__info--name p:nth-child(1) {
+	color: #0c0909;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+.header__info--name p:nth-child(1) > svg {
+	margin-right: 0.2rem;
+	font-size: 1.3rem;
+	transition: all 0.3s ease-in-out;
+}
+.header__info--name p:nth-child(1) > svg.active {
+	color: #471aaa;
+	transform: rotate(180deg);
+}
+.header__info--name p:nth-child(2) {
+	color: rgba(104, 104, 104, 1);
+	font-weight: 600;
+	font-size: 1rem;
+}
+.header__megaMenu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 65%;
+	background-color: #fff;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+	border-radius: 0.3rem 0.3rem 1rem 1rem;
+	transform-origin: top right;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.header__megaMenu--active {
+	opacity: 1;
+	visibility: visible;
+}
+.header__megaMenu--lists {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+}
+.header__megaMenu--lists--text {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+.header__megaMenu--list {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	width: 95%;
+	border-bottom: 1px solid #d3d8e5;
+	padding: 0.5rem;
+	transition: 0.3s all ease-in-out;
+}
+.header__megaMenu--list:last-child {
+	border-bottom: none;
+}
+.header__megaMenu--link {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+	border-bottom: 1px solid #d3d8e5;
+	color: #0c0909;
+	font-weight: 100;
+	border-radius: 1rem;
+	font-size: 1rem;
+}
+.header__megaMenu--link:last-child {
+	border-bottom: none;
+}
+.header__megaMenu--link:hover {
+	background-color: #d3d8e5;
+}
+.header__megaMenu--link--text {
+	font-size: 1.5rem;
+	color: #471aaa;
+}
+.header__megaMenu--icon {
+	margin: 0 1rem;
+}
+.header__megaMenu--icon > svg {
+	font-size: 1.5rem;
+	color: #471aaa;
+}
+.header__search--box {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 41rem;
+}
+.header__search--box--input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #471aaa;
+	background-color: #fff;
+	text-align: right;
+	direction: rtl;
+	font-family: 'Morabba';
+	padding: 0.8rem 1rem 1rem 8rem;
+	border-radius: 15px;
+	margin-left: 1rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header__search--box--btn {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 1.5rem;
+	padding: 0.7rem 2rem;
+	font-size: 1.3rem;
+}
+.header__search--box--btn > svg {
+	margin-right: 0.5rem;
+}
+.header__tools {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 57rem;
+	height: 100%;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #471aaa;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.header__tools--btnBox {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	column-gap: 15px;
+	margin-left: 10px;
+}
+.header__tools--btn {
+	padding: 1rem 1.2rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.header__tools--btn:hover {
+	background-color: #d3d8e5;
+}
+.header__tools--btn > svg {
+	font-size: 1.5rem;
+	color: #fff;
+}

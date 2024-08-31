@@ -1,0 +1,21 @@
+.toast {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: #16c000;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.toast-close {
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}

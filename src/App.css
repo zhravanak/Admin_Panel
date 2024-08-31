@@ -1,0 +1,10 @@
+@import url('/src/StyleSheets/fonts.css');
+.App__container {
+	display: flex;
+}
+.App_main {
+	flex: 5;
+	padding: 0 2rem;
+	min-height: 100%;
+	overflow: auto;
+}

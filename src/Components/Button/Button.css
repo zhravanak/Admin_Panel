@@ -1,0 +1,17 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #471aaa;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	font-family: 'lalezar';
+	outline: none;
+	border: none;
+}
+
+.btn:hover {
+	background-color: #612ecf;
+}

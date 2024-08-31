@@ -1,0 +1,250 @@
+.editModal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 715px;
+	height: 600px;
+	background: #fff;
+	border-radius: 25px;
+	z-index: 2;
+}
+.editModal__content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+.editModal__title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 78px;
+	border-bottom: 1px solid rgba(211, 216, 229, 0.7);
+	padding: 0.5rem 0;
+}
+.editModal__title--header {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #333;
+	margin-right: 3.5rem;
+}
+.editModal__title--icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.2rem;
+	height: 3.2rem;
+	background-color: #471aaa;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+.editModal__details {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 90%;
+	height: 20rem;
+	padding: 0 3.5rem;
+	margin-top: 1rem;
+}
+.editModal__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 50%;
+	height: 100%;
+}
+.editModal__info--lists {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	height: 100%;
+}
+.editModal__info--item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 4rem;
+	font-size: 2rem;
+	color: #333;
+	margin-bottom: 1rem;
+	text-wrap: nowrap;
+}
+.editModal__info--item::before {
+	content: '';
+	width: 0.9rem;
+	height: 0.9rem;
+	background-color: #471aaa;
+	border-radius: 50%;
+	margin-left: 1rem;
+}
+.editModal__info--item--text {
+	display: inline-block;
+	color: #777;
+	margin-right: 1rem;
+}
+.editModal__uploadPicture {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	width: 20rem;
+	height: 20rem;
+	overflow: hidden;
+}
+.editModal__uploadPicture--input {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.editModal__uploadPicture--img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.editModal__formBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 26.5rem;
+	padding: 0 3.5rem;
+	margin-top: 2rem;
+}
+.editModal__form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	gap: 1.5rem;
+}
+.editModal__form--field {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 48%;
+	flex-grow: 1;
+	margin: 0.6rem 0;
+}
+.editModal__form--input {
+	width: 310px;
+	height: 50px;
+	background: #d3d8e5;
+	border: none;
+	border-radius: 13px;
+	outline: none;
+	padding-right: 3.5rem;
+	font-family: 'lalezar';
+	font-size: 2rem;
+	font-weight: 400;
+}
+.editModal__form--input::-webkit-outer-spin-button,
+.editModal__form--input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.editModal__form--input::placeholder {
+	color: #777;
+	padding-left: 1rem;
+}
+.editModal__form--description {
+	width: 100%;
+	height: 10.2rem;
+	background: #d3d8e5;
+	border: none;
+	border-radius: 13px;
+	outline: none;
+	padding-right: 3.5rem;
+	padding-top: 1rem;
+	font-family: 'lalezar';
+	font-size: 2rem;
+	font-weight: 400;
+}
+.editModal__form--description--icon {
+	top: 23% !important;
+}
+.editModal__form--label {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	transform: translateY(-50%);
+	background-color: #d3d8e5;
+	font-size: 1.6rem;
+	color: #471aaa;
+	padding: 0 0.5rem;
+	border-radius: 0.2rem;
+}
+.editModal__form--label--active {
+	top: -60%;
+	transform: translateY(60%);
+	font-size: 1.6rem;
+}
+.editModal__form--icon {
+	position: absolute;
+	right: 3px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.editModal__button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	gap: 3rem;
+	padding: 3rem 3.5rem;
+}
+.editModal__button--submit,
+.editModal__button--cancel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 27.5rem;
+	height: 6.5rem;
+	border-radius: 13px;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	/* Chrome, Safari, Edge, Opera */
+}
+.editModal__button--submit > svg,
+.editModal__button--cancel > svg {
+	margin-right: 1rem;
+}
+.editModal__button--submit {
+	background-color: #471aaa;
+	color: #fff;
+}
+.editModal__button--submit:hover {
+	background-color: #612ecf;
+}
+.editModal__button--cancel {
+	background-color: #d3d8e5;
+	color: #777;
+}
+.editModal__button--cancel:hover {
+	background-color: rgba(211, 216, 229, 0.7);
+}
