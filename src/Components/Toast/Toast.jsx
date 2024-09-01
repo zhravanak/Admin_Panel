@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Toast.css';
+import { IoIosCloseCircle } from 'react-icons/io';
 
 const Toast = ({ message }) => {
 	if (!message) return null;
@@ -12,7 +13,7 @@ const Toast = ({ message }) => {
 				<div className='toast'>
 					<span>{toast}</span>
 					<button onClick={() => setToast(null)} className='toast-close'>
-						X
+						<IoIosCloseCircle />
 					</button>
 				</div>
 			</div>

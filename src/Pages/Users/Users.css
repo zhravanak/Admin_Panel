@@ -13,6 +13,40 @@
 	margin-top: 2rem;
 }
 
+.users__search {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.users__search--input {
+	width: 20rem;
+	height: 2rem;
+	border: none;
+	outline: none;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #471aaa;
+	background-color: #fff;
+	text-align: right;
+	direction: rtl;
+	font-family: 'Morabba';
+	padding: 0.8rem 1rem 1rem 8rem;
+	border-radius: 15px;
+	margin-left: 1rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.users__search--button {
+	position: absolute;
+	left: 1.5rem;
+	width: 7rem;
+	height: 3rem;
+}
+
 .users__button--addUser {
 	width: 15rem;
 	font-size: 1.5rem;
@@ -233,6 +267,7 @@
 }
 
 .error-text {
+	font-size: 1rem;
 	position: absolute;
 	top: 100%;
 	color: red;

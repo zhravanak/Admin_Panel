@@ -2,23 +2,25 @@ import React from 'react';
 import EditModal from '../EditModal/EditModal';
 import Button from '../Button/Button';
 
-function AddUser({ handleChange, handleSubmit, handleAddUser, handleModalClose, name, age, userName, phone, email, errors }) {
+function AddUser({ handleChange, handleAddUser, handleModalClose, formData, errors }) {
+	const { name, age, userName, phone, email } = formData;
+
 	return (
 		<EditModal label='افزودن کاربر'>
-			<form onSubmit={handleSubmit} method='POST' className='users__form'>
+			<form onSubmit={handleAddUser} method='POST' className='users__form'>
 				<div className='users__group'>
 					<label className='users__label'>نام:</label>
 					<input
 						className={`users__input ${errors.name ? 'error' : ''}`}
 						type='text'
-						name='firsname'
+						name='name'
 						value={name}
 						onChange={handleChange}
 					/>
 					{errors.name && <span className='error-text'>{errors.name}</span>}
 				</div>
 				<div className='users__group'>
-					<label className='users__label'>سن :</label>
+					<label className='users__label'>سن:</label>
 					<input
 						className={`users__input ${errors.age ? 'error' : ''}`}
 						type='text'
@@ -33,7 +35,7 @@ function AddUser({ handleChange, handleSubmit, handleAddUser, handleModalClose, 
 					<input
 						className={`users__input ${errors.userName ? 'error' : ''}`}
 						type='text'
-						name='username'
+						name='userName'
 						value={userName}
 						onChange={handleChange}
 					/>
@@ -62,7 +64,7 @@ function AddUser({ handleChange, handleSubmit, handleAddUser, handleModalClose, 
 					{errors.email && <span className='error-text'>{errors.email}</span>}
 				</div>
 				<div className='users__group users__button'>
-					<Button label='ذخیره' type='submit' className='users__button--submit' onClick={handleAddUser} />
+					<Button label='ذخیره' type='submit' className='users__button--submit' />
 					<Button label='انصراف' onClick={handleModalClose} className='users__button--cancel' />
 				</div>
 			</form>
